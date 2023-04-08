@@ -8,26 +8,12 @@ import MovieCollection from './components/MovieCollection';
 import NavBar from './components/NavBar';
 import { Routes, Route } from 'react-router-dom';
 
-// import 'bootstrap/dist/css/boostrap.min.css';
-
-// function MyButton() {
-//   const [count, setCount] = useState(0);
-
-//   return (
-//     <div>
-//       <button className="btn btn-success" onClick={() => setCount(count + 1)}>
-//         Increment
-//       </button>
-//       <p>{count}</p>
-//     </div>
-//   );
-// }
-
 function App() {
   return (
     <div className="App">
       <NavBar />
       <Routes>
+        {/* Routing for various pages */}
         <Route path="/" element={<Home />} />
         <Route path="/podcasts" element={<Podcasts />} />
         <Route path="/movie-collection" element={<MovieCollection />} />
